@@ -1,0 +1,12 @@
+{
+  "name": "ShotbySpirit Photography Portfolio",
+  "short_name": "ShotbySpirit",
+  "description": "Nature photography portfolio showcasing galleries by ShotbySpirit.",
+  "start_url": "index.htm",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#1a1a1a",
+  "orientation": "portrait-primary",
+  "lang": "en"
+}
