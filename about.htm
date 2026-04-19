@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#1a1a1a">
+    <title>About | ShotbySpirit</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="container">
+            <div class="logo">ShotbySpirit</div>
+            <nav class="nav-bar">
+                <ul>
+                    <li><a href="index.htm">Home</a></li>
+                    <li><a href="galleries.htm">Galleries</a></li>
+                    <li><a href="about.htm" aria-current="page">About</a></li>
+                    <li><a href="contact.htm">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">About Us</h1>
+            <p class="hero-subtitle">Behind the lens, the story unfolds.</p>
+        </div>
+    </section>
+
+    <main class="container">
+        <section class="about-section">
+            <div class="about-content">
+                <h2>Our Story</h2>
+                <p>
+                    ShotbySpirit was founded with a simple passion: to capture the raw beauty of nature and share it with the world. 
+                    What started as personal photography journeys through forests and mountains has evolved into a mission to inspire 
+                    others to appreciate the wilderness around us.
+                </p>
+
+                <h3>Our Mission</h3>
+                <p>
+                    We believe that photography is more than just taking pictures—it's about telling stories, preserving moments, 
+                    and creating connections between people and nature. Through our lens, we aim to showcase the untamed beauty of 
+                    the natural world and inspire environmental consciousness.
+                </p>
+
+                <h3>What We Offer</h3>
+                <ul>
+                    <li>High-quality nature and landscape photography</li>
+                    <li>Diverse collections spanning forests, mountains, wildlife, and more</li>
+                    <li>Exclusive content for our community</li>
+                    <li>Professional photography services for events and projects</li>
+                </ul>
+
+                <h3>Connect With Us</h3>
+                <p>
+                    Follow us on Instagram to see daily updates from our latest adventures. Join our growing community of nature 
+                    enthusiasts, photographers, and outdoor lovers. For inquiries, collaborations, or custom projects, feel free 
+                    to reach out through our contact page.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-col">
+                <h4>About the Page</h4>
+                <p>Capturing nature's beauty for our Instagram community.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <p>Email: shotbyspirit@proton.me</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        if ("serviceWorker" in navigator) {
+            window.addEventListener("load", function () {
+                navigator.serviceWorker.register("sw.js");
+            });
+        }
+    </script>
+
+</body>
+</html>
