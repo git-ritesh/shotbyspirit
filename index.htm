@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#1a1a1a">
+    <title>ShotbySpirit | Photography Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="container">
+            <div class="logo">ShotbySpirit</div>
+            <nav class="nav-bar">
+                <ul>
+                    <li><a href="index.htm" aria-current="page">Home</a></li>
+                    <li><a href="galleries.htm">Galleries</a></li>
+                    <li><a href="about.htm">About</a></li>
+                    <li><a href="contact.htm">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">ShotbySpirit</h1>
+            <p class="hero-subtitle">Exploring the wilderness, one frame at a time.</p>
+        </div>
+    </section>
+
+    <main class="container">
+        <section class="gallery-grid">
+            <div class="column">
+                <picture>
+                    <source media="(max-width: 767px)" srcset="images/image1-small.webp">
+                    <source media="(max-width: 1024px)" srcset="images/image1-small.webp">
+                    <img src="images/image1-large.webp" alt="Royal Poinciana" width="730" height="730" fetchpriority="high" loading="eager" decoding="async">
+                </picture>
+                <h2>Royal Poinciana</h2>
+            </div>
+            <div class="column">
+                <picture>
+                    <source media="(max-width: 767px)" srcset="images/image2-small.webp">
+                    <source media="(max-width: 1024px)" srcset="images/image2-small.webp">
+                    <img src="images/image2-large.webp" alt="Plant" width="1080" height="1350" loading="lazy" decoding="async">
+                </picture>
+                <h2>Plant</h2>
+            </div>
+            <div class="column">
+                <picture>
+                    <source media="(max-width: 767px)" srcset="images/image3-small.webp">
+                    <source media="(max-width: 1024px)" srcset="images/image3-small.webp">
+                    <img src="images/image3-large.webp" alt="Beads" width="810" height="1080" loading="lazy" decoding="async">
+                </picture>
+                <h2>Beads</h2>
+            </div>
+            <div class="column">
+                <picture>
+                    <source media="(max-width: 767px)" srcset="images/image4-small.webp">
+                    <source media="(max-width: 1024px)" srcset="images/image4-small.webp">
+                    <img src="images/image4-large.webp" alt="Tiny Details" width="1080" height="1080" loading="lazy" decoding="async">
+                </picture>
+                <h2>Tiny Details</h2>
+            </div>
+            <div class="column">
+                <picture>
+                    <source media="(max-width: 767px)" srcset="images/image5-small.webp">
+                    <source media="(max-width: 1024px)" srcset="images/image5-small.webp">
+                    <img src="images/image5-large.webp" alt="Dawn" width="1080" height="810" loading="lazy" decoding="async">
+                </picture>
+                <h2>Dawn</h2>
+            </div>
+            <div class="column">
+                <picture>
+                    <source media="(max-width: 767px)" srcset="images/image6-small.webp">
+                    <source media="(max-width: 1024px)" srcset="images/image6-small.webp">
+                    <img src="images/image6-large.webp" alt="Evening Sky" loading="lazy" decoding="async">
+                </picture>
+                <h2>Evening Sky</h2>
+            </div>
+            <div class="column">
+                <picture>
+                    <source media="(max-width: 767px)" srcset="images/image8-small.webp">
+                    <source media="(max-width: 1024px)" srcset="images/image8-small.webp">
+                    <img src="images/image8-large.webp" alt="Clouds" loading="lazy" decoding="async">
+                </picture>
+                <h2>Clouds</h2>
+            </div>
+            <div class="column">
+                <picture>
+                    <source media="(max-width: 767px)" srcset="images/image9-small.webp">
+                    <source media="(max-width: 1024px)" srcset="images/image9-small.webp">
+                    <img src="images/image9-large.webp" alt="Birds on Tree" width="980" height="980" loading="lazy" decoding="async">
+                </picture>
+                <h2>Birds on Tree</h2>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-col">
+                <h4>About the Page</h4>
+                <p>Capturing nature's beauty for our Instagram community.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <p>Email: shotbyspirit@proton.me</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        if ("serviceWorker" in navigator) {
+            window.addEventListener("load", function () {
+                navigator.serviceWorker.register("sw.js");
+            });
+        }
+    </script>
+
+</body>
+</html>
