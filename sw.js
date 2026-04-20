@@ -1,4 +1,4 @@
-const CACHE_NAME = "shotbyspirit-v2";
+const CACHE_NAME = "shotbyspirit-v3";
 
 const ASSETS_TO_CACHE = [
   "./",
@@ -7,7 +7,9 @@ const ASSETS_TO_CACHE = [
   "about.htm",
   "contact.htm",
   "style.css",
-  "manifest.json"
+  "manifest.json",
+  "sw.js",
+  "images/camera.svg"
 ];
 
 self.addEventListener("install", (event) => {
