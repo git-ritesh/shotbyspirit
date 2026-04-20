@@ -116,15 +116,9 @@
     <script>
         if ("serviceWorker" in navigator) {
             window.addEventListener("load", function () {
-                const registerWorker = function () {
-                    navigator.serviceWorker.register("sw.js");
-                };
-
-                if ("requestIdleCallback" in window) {
-                    requestIdleCallback(registerWorker, { timeout: 2500 });
-                } else {
-                    setTimeout(registerWorker, 1200);
-                }
+                navigator.serviceWorker.register("./sw.js", { scope: "./" }).catch(function (error) {
+                    console.error("Service worker registration failed:", error);
+                });
             });
         }
     </script>
