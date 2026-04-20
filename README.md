@@ -49,10 +49,8 @@ CA3/
 
 ## Running Locally
 
-Because this is a static website, you can run it in any of the following ways:
-
-1. Open index.htm directly in your browser.
-2. Or use a local static server (recommended for service worker testing).
+Because this is a static website, run it with a local static server.
+Opening files directly (file://) disables service workers and prevents PWA install prompts.
 
 Example with Python:
 
